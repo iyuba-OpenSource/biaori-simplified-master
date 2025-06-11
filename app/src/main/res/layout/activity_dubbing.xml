@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.exoplayer2.ui.StyledPlayerView
+            android:id="@+id/dubbing_spv"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="@android:color/black" />
+
+        <ImageView
+            android:id="@+id/dubbing_iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:padding="8dp"
+            android:src="@mipmap/icon_back" />
+
+    </FrameLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/dubbing_rv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#F8F8FF"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/dubbing_tv_preview"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:background="@drawable/rctg_dubbing_release"
+            android:gravity="center"
+            android:text="预览配音"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

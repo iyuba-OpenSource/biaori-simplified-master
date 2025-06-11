@@ -1,0 +1,114 @@
+<resources>
+    <!--    <string name="app_name">标准日本语</string>-->
+
+    <!--vivo 其他-->
+        <string name="app_name">日语听力</string>
+
+    <!--oppo-->
+<!--                <string name="app_name">Ai日语听力</string>-->
+
+    <!--小米-->
+<!--    <string name="app_name">爱语吧日语听力</string>-->
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!--    <string name="vip_intro1_new">1.尊贵V标识\n2.查看试题解析\n3.免费口语评测\n4.开启语速调节功能\n5.本应用VIP仅限Android端当前应用使用</string>-->
+
+    <string name="vip_intro1_new">1.PDF免费导出\n2.开启语速调节功能\n3.非VIP用户单词闯关体验闯1关，VIP会员无限单词闯关\n4.普通用户每篇课文可以免费评测3句，vip用户可以全部评测</string>
+
+
+    <string name="this_vip_time1">本应用一月会员</string>
+    <string name="this_vip_time2">本应用半年会员</string>
+    <string name="this_vip_time3">本应用一年会员</string>
+    <string name="this_vip_time4">本应用三年会员</string>
+    <string name="this_vip_price1">￥25</string>
+    <string name="this_vip_price2">￥69</string>
+    <string name="this_vip_price3">￥99</string>
+    <string name="this_vip_price4">￥199</string>
+    <string name="all_vip_time1">全站会员1个月</string>
+    <string name="all_vip_time2">全站会员6个月</string>
+    <string name="all_vip_time3">全站会员12个月</string>
+    <string name="all_vip_time4">全站会员36个月</string>
+    <string name="all_vip_price1">￥50</string>
+    <string name="all_vip_price2">￥198</string>
+    <string name="all_vip_price3">￥298</string>
+    <string name="all_vip_price4">￥588</string>
+    <string name="gold_vip_time1">黄金会员1个月</string>
+    <string name="gold_vip_time2">黄金会员3个月</string>
+    <string name="gold_vip_time3">黄金会员6个月</string>
+    <string name="gold_vip_time4">黄金会员12个月</string>
+    <string name="gold_vip_price1">￥98</string>
+    <string name="gold_vip_price2">￥288</string>
+    <string name="gold_vip_price3">￥518</string>
+    <string name="gold_vip_price4">￥998</string>
+    <string name="vip_desc1">本应用VIP</string>
+    <string name="vip_desc2">全站VIP</string>
+    <string name="vip_desc3">黄金VIP</string>
+
+    <!--\n9.积分商城换取话费福利-->
+    <string name="vip_intro2">1.去除广告，专注学习\n2.显示尊贵标识\n3.开启语速调节功能\n4.享受高速通道、无限下载\n5.查看考试类所有试题答案解析\n6.智慧化语音评测\n7.支持PDF导出\n8.适用于爱语吧旗下所有应用</string>
+    <string name="vip_intro3">1.尊享微课模块:VOA英语Lisa博士、Rachel美语发音；Alex博士BBC英式发音；新概念英语全4册；四六级名师陈苏灵、李尚龙、石雷鹏、尹延、章敏等；托福、雅思、考研、学位英语、中职英语等名师讲解所有课程全部免费学习\n2.尊享爱语吧旗下全站会员特权。</string>
+
+    <string name="vip_desc_mic1">(不含微课)</string>
+    <string name="vip_desc_mic1_new"> </string>
+    <string name="vip_desc_mic2">(全部微课)</string>
+
+    <string name="tips">温馨提醒</string>
+    <string name="cancel">取消</string>
+    <string name="sure">确定</string>
+
+
+    <string name="order_tips1">欢迎您:</string>
+    <string name="order_tips2">订单:</string>
+    <string name="order_tips3">需要支付人民币:</string>
+
+    <string name="choose_method">选择支付方式</string>
+    <string name="pay_method_wx">微信支付</string>
+    <string name="confirm">确认支付</string>
+
+    <string name="device_wx">推荐安装微信5.0以上的版本使用</string>
+    <string name="device_zfb">推荐支付宝账号的用户使用</string>
+    <string name="pay_method_zfb">支付宝支付</string>
+
+    <string-array name="lessonSpeedChoose">
+        <item>0.3</item>
+        <item>0.4</item>
+        <item>0.5</item>
+        <item>0.6</item>
+        <item>0.7</item>
+        <item>0.8</item>
+        <item>0.9</item>
+        <item>1.0</item>
+        <item>1.1</item>
+        <item>1.2</item>
+        <item>1.3</item>
+        <item>1.4</item>
+        <item>1.5</item>
+        <item>1.6</item>
+        <item>1.7</item>
+        <item>1.8</item>
+        <item>1.9</item>
+        <item>2.0</item>
+    </string-array>
+
+
+    <!--口语圈分享-->
+    <string-array name="share_platform_icons_personal">
+        <item>@drawable/iyu_share_ic_qq</item>
+        <item>@drawable/iyu_share_ic_qzone</item>
+        <!--        <item>@drawable/iyu_share_ic_sinaweibo</item>-->
+        <item>@drawable/iyu_share_ic_wechat</item>
+        <item>@drawable/iyu_share_ic_wechatmoments</item>
+        <item>@drawable/iyu_share_ic_wechatfavorite</item>
+    </string-array>
+    <string-array name="share_platform_names_personal">
+        <item>@string/share_platform_qq_personal</item>
+        <item>@string/share_platform_qzone</item>
+        <!--        <item>@string/share_platform_sina_personal</item>-->
+        <item>@string/share_platform_wechat_personal</item>
+        <item>@string/share_platform_wechatmoment_personal</item>
+        <item>@string/share_platform_wechatfavor_personal</item>
+    </string-array>
+</resources>

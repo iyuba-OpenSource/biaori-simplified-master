@@ -1,0 +1,117 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/drawable-v24/bg_write_corners.xml" value="0.1545" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/drawable-v24/btn_view_shape3.xml" value="0.177" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.201" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/drawable-v24/progressbar_bkg_right.xml" value="0.153" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/drawable-v24/progressbar_horizontal.xml" value="0.201" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/drawable-v24/progressbar_horizontal_right.xml" value="0.155" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/drawable/anim_ownvoice_player.xml" value="0.12" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/drawable/anim_sentence_player.xml" value="0.173" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/drawable/anim_word_player.xml" value="0.173" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/drawable/bg_round_corner_white.xml" value="0.132" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/drawable/bg_write_corners.xml" value="0.186" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/drawable/bt_welcome.xml" value="0.1465" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/drawable/decoration_10dp.xml" value="0.127" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/drawable/oval_score.xml" value="0.124" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/drawable/progressbar_bkg.xml" value="0.201" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/drawable/progressbar_bkg_right.xml" value="0.153" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/drawable/progressbar_horizontal.xml" value="0.201" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/drawable/progressbar_horizontal_right.xml" value="0.1565" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/drawable/rctg_dubbing.xml" value="0.173" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/drawable/rctg_dubbing_release.xml" value="0.155" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/drawable/selector_excerise_btn.xml" value="0.1605" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/drawable/selector_next_word.xml" value="0.1785" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/drawable/shape_bg_lesson.xml" value="0.127" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/drawable/shape_bg_login_edit.xml" value="0.1275" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/drawable/shape_bg_more.xml" value="0.1085" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/drawable/shape_bg_speed.xml" value="0.177" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/drawable/shape_btn_bg.xml" value="0.1275" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/drawable/shape_btn_grey_bg.xml" value="0.1275" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/drawable/shape_c_bg_word.xml" value="0.1" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/drawable/shape_line_me_pri.xml" value="0.1645" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/drawable/shape_line_word.xml" value="0.1" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/drawable/shape_loading.xml" value="0.111" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/drawable/shape_rctg_bg_bt_gray.xml" value="0.1685" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/drawable/shape_rctg_bg_bt_green.xml" value="0.1695" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/drawable/shape_rctg_bg_word.xml" value="0.178" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/drawable/space_10dp.xml" value="0.1" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/layout/actionbar_content.xml" value="0.1328125" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/layout/activity_book_list.xml" value="0.20364583333333333" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/layout/activity_btwords.xml" value="0.33" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/layout/activity_buy_iyu_bi.xml" value="0.184375" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/layout/activity_dubbing.xml" value="0.18" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/layout/activity_dubbing_preview.xml" value="0.33" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/layout/activity_dubbing_second.xml" value="0.14427083333333332" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/layout/activity_dubbing_video.xml" value="0.22" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/layout/activity_login.xml" value="0.33" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/layout/activity_main.xml" value="0.16" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/layout/activity_my_collect.xml" value="0.16354166666666667" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/layout/activity_my_web.xml" value="0.17083333333333334" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/layout/activity_order.xml" value="0.18" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/layout/activity_register.xml" value="0.33" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/layout/activity_textbook_details.xml" value="0.125" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/layout/activity_vip.xml" value="0.25" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/layout/activity_welcome.xml" value="0.16" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/layout/activity_word_answer.xml" value="0.22" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/layout/activity_word_collect.xml" value="0.18802083333333333" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/layout/activity_word_details.xml" value="0.22" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/layout/dialog_diy.xml" value="0.1328125" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/layout/dialog_logoff.xml" value="0.1109375" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/layout/empty_view.xml" value="0.25" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/layout/exo_styled_player_control_view.xml" value="0.2" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/layout/fragment_break_through.xml" value="0.20364583333333333" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/layout/fragment_dubbing.xml" value="0.1578125" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/layout/fragment_dubbing2.xml" value="0.175" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/layout/fragment_dubbing_list.xml" value="0.1578125" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/layout/fragment_dubbing_rank.xml" value="0.20364583333333333" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/layout/fragment_lesson_word.xml" value="0.20364583333333333" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/layout/fragment_me.xml" value="0.25" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/layout/fragment_original.xml" value="0.18" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/layout/fragment_textbook.xml" value="0.11875" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/layout/item_answer.xml" value="0.16354166666666667" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/layout/item_book_list.xml" value="0.1515625" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/layout/item_break_through.xml" value="0.33" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/layout/item_cp_word.xml" value="0.22" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/layout/item_dubbing.xml" value="0.18" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/layout/item_dubbing_list.xml" value="0.1578125" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/layout/item_dubbing_rank.xml" value="0.175" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/layout/item_dubbing_second.xml" value="0.25" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/layout/item_lesson_word.xml" value="0.25" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/layout/item_me_pri.xml" value="0.20364583333333333" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/layout/item_more.xml" value="0.22" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/layout/item_original.xml" value="0.33" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/layout/item_textbook.xml" value="0.22" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/layout/item_vip.xml" value="0.10989583333333333" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/layout/item_vip_kind.xml" value="0.1" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/layout/nav.xml" value="0.5" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/layout/notification_music.xml" value="0.25" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/layout/popup_analysis.xml" value="0.33" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/layout/popup_bt_fail.xml" value="0.33" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/layout/popup_bt_more.xml" value="0.13645833333333332" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/layout/popup_bt_success.xml" value="0.21" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/layout/popup_download.xml" value="0.11822916666666666" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/layout/popup_loading.xml" value="0.33" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/layout/popup_me_pri.xml" value="0.20364583333333333" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/layout/popup_more.xml" value="0.25" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/layout/popup_privacy.xml" value="0.17083333333333334" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/layout/popup_speed.xml" value="0.14479166666666668" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/layout/popup_word_tip.xml" value="0.25" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/layout/toolbar_break.xml" value="0.20364583333333333" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/layout/toolbar_common.xml" value="0.18" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/layout/toolbar_common2.xml" value="0.18" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/layout/toolbar_word.xml" value="0.25" />
+        <entry key="..\:/git_download/iyuba_project/BZRBY/app/src/main/res/menu/menu_home_qq.xml" value="0.20364583333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_21" default="true" project-jdk-name="jbr-21" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

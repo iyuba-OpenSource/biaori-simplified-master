@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape>
+
+            <solid android:color="@android:color/white" />
+        </shape>
+    </item>
+
+
+    <item
+        android:drawable="@mipmap/icon_splash_top"
+        android:gravity="center"
+        android:top="-150dp">
+
+        <!--        <bitmap-->
+        <!--            android:antialias="true"-->
+        <!--            android:dither="true"-->
+        <!--            android:filter="true"-->
+        <!--            android:gravity="top|center_horizontal"-->
+        <!--            android:src="@mipmap/icon_splash_top" />-->
+
+
+    </item>
+
+    <item android:bottom="50dp">
+        <bitmap
+            android:antialias="true"
+            android:dither="true"
+            android:filter="true"
+            android:gravity="bottom|center_horizontal"
+            android:src="@mipmap/icon_splash_bottom" />
+    </item>
+
+
+</layer-list>

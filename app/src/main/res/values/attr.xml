@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <declare-styleable name="GameStageView">
+        <attr name="itemWidth" format="dimension" />
+        <attr name="itemHeight" format="dimension" />
+        <attr name="itemTextSize" format="dimension" />
+        <attr name="itemDividerColor" format="color" />
+
+        <attr name="itemDividerHorizontalWidth" format="dimension" />
+        <attr name="itemDividerHorizontalHeight" format="dimension" />
+        <attr name="itemDividerVerticalWidth" format="dimension" />
+        <attr name="itemDividerVerticalHeight" format="dimension" />
+
+        <attr name="totalColumns" format="integer" />
+        <attr name="lineColumns" format="integer" />
+        <attr name="nowPosition" format="integer" />
+
+        <attr name="itemNormalTextColor" format="color" />
+        <attr name="itemLockTextColor" format="color" />
+        <attr name="itemNormalBgColor" format="color" />
+        <attr name="itemLockBgColor" format="color" />
+
+        <attr name="InnerPaddingLeft" format="dimension" />
+        <attr name="InnerPaddingTop" format="dimension" />
+        <attr name="InnerPaddingRight" format="dimension" />
+
+        <attr name="itemHeadSrc" format="reference" />
+        <attr name="itemHeadSize" format="dimension" />
+        <attr name="itemHeadStrokeColor" format="color" />
+        <attr name="itemHeadStrokeWidth" format="dimension" />
+        <attr name="itemHeadArrowColor" format="color" />
+        <attr name="itemHeadArrowTopPadding" format="dimension" />
+    </declare-styleable>
+
+</resources>

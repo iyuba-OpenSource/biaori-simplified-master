@@ -1,0 +1,316 @@
+import java.text.SimpleDateFormat
+
+static def releaseTime() {
+    SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
+    return formatter.format(new Date())
+}
+
+plugins {
+    id 'com.android.application'
+    id 'com.mob.sdk'
+}
+
+MobSDK {
+    appKey "2b0fa8ec86517"
+    appSecret "4ec2c068012a435e1bac33d623bcdb97"
+    ShareSDK {
+        loopShare true
+        devInfo {
+            /* SinaWeibo {
+             }*/
+            Wechat {
+                appId "wx2818d9926ec9fa73"
+                appSecret "ee5fe5b23a39a1588de874cd5ffe8836"
+            }
+            QQ {
+                appId "1110551623"
+                appKey "QI9KuOO4JjrOCYxS"
+            }
+            WechatMoments {
+
+                appId "wx2818d9926ec9fa73"
+                appSecret "ee5fe5b23a39a1588de874cd5ffe8836"
+            }
+            WechatFavorite {
+
+                appId "wx2818d9926ec9fa73"
+                appSecret "ee5fe5b23a39a1588de874cd5ffe8836"
+            }
+            QZone {
+
+                appId "1110551623"
+                appKey "QI9KuOO4JjrOCYxS"
+            }
+        }
+    }
+    SecVerify {}
+    SMSSDK {}
+}
+
+android {
+
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.iyuba.biaori.simplified"
+        minSdk 23
+        targetSdk 32
+        versionCode 8
+        versionName "1.14.45"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        multiDexEnabled true
+
+        ndk {
+            abiFilters "arm64-v8a"
+            //"armeabi-v7a" , "arm64-v8a"
+        }
+    }
+    lintOptions {
+        abortOnError false
+    }
+
+    buildFeatures {
+
+        viewBinding true
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+
+    signingConfigs {
+        iyuba {
+            storeFile file("../iyuba_android.keystore")
+            storePassword 'buaaiyuba'
+            keyAlias 'android.keystore'
+            keyPassword 'buaaiyuba'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.iyuba
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            signingConfig signingConfigs.iyuba
+        }
+    }
+    namespace 'com.iyuba.biaori.simplified'
+
+    applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            def outputFile = output.outputFile
+            def fileName
+            if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                if (variant.buildType.name.equals('release')) {//如果是release包
+                    fileName = "bzrby-${buildType.name}-${defaultConfig.versionName}-" +
+                            "${defaultConfig.versionCode}-${releaseTime()}.apk"
+                } else if (variant.buildType.name.equals('debug')) {//如果是debug包
+                    fileName = "${buildType.name}-${defaultConfig.versionName}-" +
+                            "${defaultConfig.versionCode}-${releaseTime()}.apk"
+                }
+                outputFileName = fileName
+            }
+        }
+    }
+}
+
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.4.2'
+    implementation 'com.google.android.material:material:1.6.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.firebase:firebase-ml-common:22.1.2'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    implementation 'com.squareup.retrofit2:converter-gson:2.11.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.11.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.11.0'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.21'
+
+    //adapter
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.49-androidx'
+    //glide
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+//    annotationProcessor 'com.github.bumptech.glide:compiler:4.13.2'
+
+    implementation("org.greenrobot:eventbus:3.3.1")
+
+    //弹窗的框架
+    implementation 'io.github.razerdp:BasePopup:3.2.0'
+
+    implementation(name: "player-1.2.8", ext: 'aar')
+//    implementation(name: "player-ijk-1.2.8", ext: 'aar')
+    implementation(name: "player-exo-1.2.8-alpha01", ext: 'aar')
+    implementation(name: "exomedia-4.3.0-modify", ext: 'aar')
+    implementation "com.google.android.exoplayer:exoplayer-core:2.19.0"
+
+    implementation "com.github.AnthonyFermin:DropDownView:1.0.1"
+
+//    implementation(name: "ijkplayer-arm64-0.8.8-modify", ext: 'aar')
+//    implementation(name: "ijkplayer-armv7a-0.8.8-modify", ext: 'aar')
+//    implementation(name: "ijkplayer-java-0.8.8-modify", ext: 'aar')
+
+
+    implementation "de.hdodenhof:circleimageview:3.1.0"
+
+    implementation('com.github.lihangleo2:ShadowLayout:3.3.2') {
+        exclude module: 'glide'
+    }
+    //友盟
+    // 友盟基础组件库（所有友盟业务SDK都依赖基础组件库
+    api 'com.umeng.umsdk:common:+'// 必选
+    implementation 'com.umeng.umsdk:asms:+'// 必选
+
+    implementation 'com.umeng.umsdk:uyumao:+'
+    // 高级运营分析功能依赖库，使用U-App卸载分析、开启反作弊能力请务必集成。common需搭配v9.6.3及以上版本，asms需搭配v1.7.0及以上版本。需更新隐私声明。
+
+    implementation 'com.umeng.umsdk:apm:+'// U-APM产品包依赖，必选
+
+    //支付宝sdk
+    implementation 'com.alipay.sdk:alipaysdk-android:+@aar'
+
+    //个人中心
+    implementation(name: "personalhomelibrary-1.6.6", ext: 'aar')
+    implementation "com.h6ah4i.android.widget.verticalseekbar:verticalseekbar:1.0.0"
+    implementation(name: 'share-0.1.3', ext: 'aar')
+    implementation(name: 'user-0.2.7', ext: 'aar')
+    implementation "com.jakewharton.timber:timber:4.7.1"
+    implementation(name: 'mvp-1.0.0', ext: 'aar')
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
+    implementation(name: 'recycler-0.2.0', ext: 'aar')
+    implementation('com.squareup.retrofit2:converter-simplexml:2.9.0') {
+        exclude group: 'xpp3', module: 'xpp3'
+        exclude group: 'stax', module: 'stax-api'
+        exclude group: 'stax', module: 'stax'
+    }
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation(name: "creator-1.0.0", ext: 'aar')
+    implementation(name: "toolbox-1.1.0", ext: 'aar')
+    implementation(name: "commonvar-1.0.0", ext: 'aar')
+    implementation "jp.wasabeef:glide-transformations:4.3.0"
+    implementation("com.daimajia.swipelayout:library:1.2.0@aar") {
+        exclude group: 'com.android.support'
+    }
+    implementation(name: "universitypicker-0.2.1", ext: 'aar')
+    implementation "com.github.linger1216:labelview:v1.1.2"
+    implementation "com.flyco.roundview:FlycoRoundView_Lib:1.1.4@aar"
+    implementation "com.github.chrisbanes:PhotoView:2.0.0"
+    implementation(name: "videocompressor-1.0", ext: 'aar')
+    //微课需要
+    implementation(name: "imooclib-1.7.1", ext: 'aar')
+    implementation(name: "privacy-1.0.4", ext: 'aar')
+    implementation(name: "waitdialog-1.2.1", ext: 'aar')
+    implementation(name: "mixed_converter-1.2.1", ext: 'aar')
+    implementation(name: "adblocker-1.0.2", ext: 'aar')
+    implementation "com.youth.banner:banner:1.4.10"
+    implementation(name: "dlex-1.0.4", ext: 'aar')
+    implementation(name: "basicfavor-1.2.7", ext: 'aar')
+    implementation(name: "basicdl-1.2.2", ext: 'aar')
+    implementation(name: "sdk-0.3.9", ext: 'aar')
+
+    implementation(name: "data-youdao-0.1.8-fix2", ext: 'aar')
+    implementation(name: "data-ydsdk-0.3.9-fix2", ext: 'aar')
+    implementation(name: "data-iyuba-0.2.0-fix2", ext: 'aar')
+
+    implementation "com.google.code.gson:gson:2.9.0"
+    implementation(name: "vpager-0.1.0", ext: 'aar')
+    implementation(name: "universitypicker-0.2.1", ext: 'aar')
+    implementation(name: "subtitle-1.2.2", ext: 'aar')
+    implementation(name: "textpage-1.2.1", ext: 'aar')
+    implementation(name: "resize-1.0.0", ext: 'aar')
+    implementation(name: "mse-0.2.7", ext: 'aar')
+    implementation(name: "mp3trans-0.2.0", ext: 'aar')
+    implementation(name: "iyubamovies-1.2.9", ext: 'aar')
+    implementation "com.github.naman14:TAndroidLame:1.1"
+    implementation(name: "parse-0.2.4", ext: 'aar')
+    implementation(name: "share-mob-0.1.3", ext: 'aar')
+    implementation(name: "sonic-1.0.1", ext: 'aar')
+//    implementation(name: "adbrowser-1.0.1", ext: 'aar')
+
+    //headline
+//    implementation(name: 'headlinesearch-1.2.4', ext: 'aar')
+//    implementation(name: 'trainingcamp-1.1.1', ext: 'aar')
+    implementation(name: "headlinelibrary-1.8.0", ext: 'aar')
+    implementation(name: 'imagetextview-1.2.1', ext: 'aar')
+    implementation(name: 'roundprogressbar-1.0.0', ext: 'aar')
+    implementation(name: 'progresswheel-1.0.1', ext: 'aar')
+
+
+    //弹窗
+    implementation(name: "popmenu-0.2.2", ext: 'aar')
+    implementation("com.scwang.smartrefresh:SmartRefreshLayout:1.1.0") {
+        exclude group: 'com.android.support'
+    }
+    implementation "com.github.hotchemi:permissionsdispatcher:4.1.0"
+    annotationProcessor "com.github.hotchemi:permissionsdispatcher-processor:4.1.0"
+
+    //有道
+    implementation(name: "youdaosdk_4.3.3", ext: 'aar')
+
+
+    //我的收藏
+    implementation(name: "commonres-1.2.0", ext: 'aar')
+    implementation "com.google.code.gson:gson:2.9.0"
+    //数据库
+    implementation 'org.litepal.guolindev:core:3.2.3'
+
+    //支持rxjava2  权限请求
+    implementation 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.4@aar'
+
+//    implementation 'com.google.android.exoplayer:exoplayer:2.18.6'
+    implementation 'com.google.android.exoplayer:exoplayer-ui:2.19.0'
+
+
+    implementation 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:6.8.0'
+
+    //二维码
+    implementation 'com.google.zxing:core:3.3.3'
+    implementation(name: "calendarview-2.0", ext: 'aar')
+
+    //有道智选需要
+    implementation "com.airbnb.android:lottie:5.2.0"
+
+    //广告
+    implementation(name: 'mediatom-0.3.9-fix', ext: 'aar')
+    implementation(name: 'ydsdk-0.3.9-fix', ext: 'aar')
+    implementation(name: 's2s-0.3.9', ext: 'aar')
+
+
+    implementation(name: 'mediatom-tt-adapt-0.3.9-fix4', ext: 'aar')
+    implementation(name: 'open_ad_sdk_6.7.0.6', ext: 'aar')
+    implementation 'com.jakewharton.timber:timber:4.7.1'
+    //倍孜
+    implementation(name: 'mediatom-adhub-adapt-0.3.9', ext: 'aar')
+    implementation(name: 'beizi_ad_sdk_3.5.0.9', ext: 'aar')
+    implementation(name: 'beizi_fusion_sdk_4.90.4.11', ext: 'aar')
+    //百度广告
+    implementation(name: 'mediatom-bd-adapt-0.3.9-fix-bdv9.373', ext: 'aar')
+    implementation(name: 'Baidu_MobAds_SDK-release_v9.373', ext: 'aar')
+    //快手广告
+    implementation(name: 'mediatom-ks-adapt-0.3.9', ext: 'aar')
+    implementation(name: 'kssdk-ad-3.3.63-publishRelease-085cdfe109', ext: 'aar')
+    //腾讯广告
+    implementation(name: 'mediatom-tx-adapt-0.3.9-fix2', ext: 'aar')
+    implementation(name: 'GDTSDK.unionNormal.4.620.1490', ext: 'aar')
+
+    implementation(name: 'mixnative-0.3.9-fix3', ext: 'aar')
+
+    implementation "com.squareup.okhttp3:logging-interceptor:3.10.0"
+}
